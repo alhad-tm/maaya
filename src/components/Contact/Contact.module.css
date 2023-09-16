@@ -1,0 +1,70 @@
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0C0C0C;
+    padding: 6% 6%;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+
+
+.div1>:nth-child(1){
+    font-family: K2D;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    background: var(--G1, linear-gradient(180deg, #3BFFBA 0%, #3BDBFF 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.div2{
+    display: flex;
+    justify-content: space-between;
+}
+.ms{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.mshead>:nth-child(1){
+    color: #B3B3B3;
+font-family: Nunito;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+}
+.mscontent{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.contentleft{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.social1,.social2{
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+.social1>span,.social2>span{
+   
+    
+    background: radial-gradient(circle, rgba(236, 196, 64, 1), rgba(255, 250, 74, 1), rgba(221, 172, 23, 1), rgba(255, 255, 149, 1));
+
+   background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}

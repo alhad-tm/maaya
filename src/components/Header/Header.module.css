@@ -1,0 +1,28 @@
+.container{
+    width: 100%;
+    padding: 2% 6%;
+    background: #121212;
+    height: 15vh;
+    color:sandybrown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+}
+.wrap{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rightlist{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.rightlist>li{
+    list-style: none;
+}
