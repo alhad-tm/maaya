@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import css from "./Header.module.css"
 
 import Maaya from "../../assets/maaya.svg"
 import Whatsapp from "../../assets/whatsapp.svg"
+import Bars from "../../assets/Bars.svg"
+import Close from "../../assets/close.png"
+import { Link } from 'react-scroll'
 
 
 const Header = () => {
+
+    const mobile = window.innerWidth <= 768 ? true : false;
+    const [menuOpened, setMenuOpened] = useState(false); 
   return (
     <div className={css.container}>
         <div className={css.wrap}>
@@ -13,12 +19,31 @@ const Header = () => {
              <img src={Maaya} alt="" />
             </div>
             <div className={css.wrapright}>
-                <ul className={css.rightlist}>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+
+            {menuOpened === false && mobile === true ? (
+        <div onClick={() => setMenuOpened(true)}>
+          <img className={css.bars}
+            src={Bars}
+            alt=""
+           
+          />
+        </div>
+        ) : (
+
+
+
+
+                <ul className={css.rightlist}  onClick={()=>setMenuOpened(false)}>
+                      {mobile? <div className={css.main}>
+          <div className={css.m1}> <img src={Maaya} alt="" />  </div>
+          <div className={css.m2}> <img src={Close} alt="" /></div>
+           </div>:""}
+               <Link onClick={()=>setMenuOpened(false)} to="home">  <li>Home</li> </Link>    
+               <Link onClick={()=>setMenuOpened(false)} to="about">  <li>About</li> </Link>    
+               <Link onClick={()=>setMenuOpened(false)} to="contact">  <li>Contact</li> </Link>    
+                   
                     <img src={Whatsapp} alt="" />
-                </ul>
+                </ul>)}
             </div>
         </div>
       

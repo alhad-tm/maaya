@@ -6,7 +6,7 @@ import Qr1 from "../../assets/qr1.svg"
 
 const Contact = () => {
   return (
-    <div className={css.container}>
+    <div className={css.container} id='contact'>
 
         <div className={css.wrap}>
 
@@ -45,14 +45,14 @@ const Contact = () => {
 {/* raw */}
 <div className={css.ms}>
             <div className={css.mshead}>
-                <span>Maaya - silk thread jewellery</span>
+                <span>Maaya - Raw materials</span>
             </div>
 
             <div className={css.mscontent}>
                 <div className={css.contentleft}>
                    <div className={css.social1}>
                     <img src={Cinsta} alt="" />
-                    <span>maaya_silkthread_jewellery</span>
+                    <span>maayas_rawmaterials</span>
                    </div>
                    <div className={css.social2}>
                     <img src={CWhatsapp} alt="" />

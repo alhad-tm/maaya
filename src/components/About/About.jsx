@@ -3,7 +3,7 @@ import css from "./About.module.css"
 
 const About = () => {
   return (
-    <div className={css.container}>
+    <div className={css.container} id='about'>
 
 
         <div className={css.wrap}>

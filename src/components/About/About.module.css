@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     background: #121212;
+    padding: 6% 0;
 }
 .wrap{
     width: 60%;
@@ -34,4 +35,21 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 36px; /* 200% */
+}
+
+@media screen and (max-width:768px){
+    .container{
+        padding: 6% 6%;
+    }
+    .wrap{
+        width: 100%;
+        gap: 1rem;
+    }
+    .wrap>:nth-child(1){
+        font-size: 24px;
+    }
+    .wrap>:nth-child(2),.wrap>:nth-child(3){
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
