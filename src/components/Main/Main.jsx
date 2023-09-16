@@ -18,12 +18,12 @@ const Main = () => {
 
             </div>
 
-
+ 
             <div className={css.wrap2}>
 
             <div className={css.contain}>
                     <div className={css.box}>
-                        <img src={MaayaS} alt="" />
+                        <img src={MaayaR} alt="" />
                     </div>
                     <button className={css.vsbtn}>View store</button>
                 </div>

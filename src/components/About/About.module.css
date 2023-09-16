@@ -44,6 +44,8 @@ line-height: 36px; /* 200% */
     .wrap{
         width: 100%;
         gap: 1rem;
+        padding-top: 55px;
+        padding-bottom: 55px;
     }
     .wrap>:nth-child(1){
         font-size: 24px;

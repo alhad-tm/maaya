@@ -38,9 +38,9 @@ const Header = () => {
           <div className={css.m1}> <img src={Maaya} alt="" />  </div>
           <div className={css.m2}> <img src={Close} alt="" /></div>
            </div>:""}
-               <Link onClick={()=>setMenuOpened(false)} to="home">  <li>Home</li> </Link>    
-               <Link onClick={()=>setMenuOpened(false)} to="about">  <li>About</li> </Link>    
-               <Link onClick={()=>setMenuOpened(false)} to="contact">  <li>Contact</li> </Link>    
+               <Link onClick={()=>setMenuOpened(false)} to="home" smooth={true}>  <li>Home</li> </Link>    
+               <Link onClick={()=>setMenuOpened(false)} to="about" smooth={true}>  <li>About</li> </Link>    
+               <Link onClick={()=>setMenuOpened(false)} to="contact" smooth={true}>  <li>Contact</li> </Link>    
                    
                     <img src={Whatsapp} alt="" />
                 </ul>)}
