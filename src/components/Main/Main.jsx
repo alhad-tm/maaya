@@ -19,7 +19,7 @@ const Main = () => {
      <span> Party wear bangles</span>
      <span>Bridal packages</span>
      <span>Bulk orders accepted</span>
-     <span>View Store</span>
+    
 
                     </div>
                     <button className={css.vsbtn}>View store</button>
