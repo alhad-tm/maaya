@@ -23,7 +23,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   
     gap: 1rem;
 }
 .box{
@@ -31,6 +30,90 @@
 background: rgba(0, 0, 0, 0.3);
 padding: 8%;
 }
+.box,.vsbtn{
+    transition:  transform 0.3s ease-in-out;
+}
+.animation{
+    display: none;
+}
+.wrap1:hover .animation{
+    display: block;
+    transform: scale(1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.animation>span{
+    color: #B3B3B3;
+text-align: center;
+font-family: Nunito;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+cursor: pointer;
+}
+.wrap1:hover .box {
+    transform: translateY(-41%);
+}
+.wrap1:hover .vsbtn {
+    transform: translateY(25%);
+}
+.wrap1:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.92) 100%), url(../../assets/mainbg1.png), lightgray 4px -129.717px / 99.444% 157.997% no-repeat;
+
+}
+/* animate2 */
+.box{
+    border-radius: 6.098px;
+background: rgba(0, 0, 0, 0.3);
+padding: 8%;
+}
+.box,.vsbtn{
+    transition:  transform 0.3s ease-in-out;
+}
+.animation2{
+    display: none;
+}
+.wrap2:hover .animation2{
+    display: block;
+    transform: scale(1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+   
+}
+.aleft,.aright{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.aleft>span,.aright>span{
+    color: #B3B3B3;
+text-align: center;
+font-family: Nunito;
+font-size: 16px; 
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: left;
+cursor: pointer;
+}
+.wrap2:hover .box {
+    transform: translateY(-41%);
+}
+.wrap2:hover .vsbtn {
+    transform: translateY(25%);
+}
+.wrap2:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.92) 100%), url(../../assets/mainbg2.png), lightgray 4px -129.717px / 99.444% 157.997% no-repeat;
+
+}
+
+
+/* animate2 e */
 
 .vsbtn{
     border-radius: 6px;
@@ -87,5 +170,11 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 border-radius: 6px;
+    }
+    .animation>span{
+        font-size: 14px;
+    }
+    .aleft>span,.aright>span{
+        font-size: 14px;
     }
 }
